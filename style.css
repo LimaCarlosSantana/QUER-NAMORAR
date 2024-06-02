@@ -1,0 +1,49 @@
+body{
+    background-color: red;
+}
+
+.painel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: white;
+    max-width: 90%; /* Ajuste a largura máxima conforme necessário */
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sim{
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: -50px;
+}
+#nao{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+}
+
+img {
+    max-width: 100%; /* Imagem se ajustará à largura do contêiner pai */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Adicionado media query para dispositivos com largura máxima de 600px (por exemplo, celulares) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .painel {
+        width: 90%; /* Reduz a largura do painel para se ajustar melhor em dispositivos menores */
+    }
+}
