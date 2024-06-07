@@ -4,16 +4,28 @@ document.addEventListener("DOMContentLoaded", function() {
     var span = document.getElementsByClassName("close")[0];
 
     btnSim.onclick = function() {
-        modal.style.display = "flex"; // Usando flex para centralizar
+        var modalContent = document.querySelector(".modal-content");
+        var img = document.createElement("img");
+        img.src = "imagens/Certificado de Namoro.png";
+        img.alt = "Certificado de Namoro";
+        // Remove a imagem anterior se houver
+        if (modalContent.querySelector("img")) {
+            modalContent.querySelector("img").remove();
+        }
+        modalContent.appendChild(img);
+        modal.classList.add('show'); // Adiciona a classe show para exibir o modal e o conteúdo
+        modal.style.display = "flex"; // Abre o modal
     }
 
     span.onclick = function() {
-        modal.style.display = "none";
+        modal.classList.remove('show'); // Remove a classe show para esconder o modal e o conteúdo
+        modal.style.display = "none"; // Fecha o modal
     }
 
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.style.display = "none";
+            modal.classList.remove('show'); // Remove a classe show para esconder o modal e o conteúdo
+            modal.style.display = "none"; // Fecha o modal ao clicar fora dele
         }
     }
 });
