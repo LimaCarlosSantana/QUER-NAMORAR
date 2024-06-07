@@ -13,18 +13,15 @@ document.addEventListener("DOMContentLoaded", function() {
             modalContent.querySelector("img").remove();
         }
         modalContent.appendChild(img);
-        modal.classList.add('show'); // Adiciona a classe show para exibir o modal e o conteúdo
         modal.style.display = "flex"; // Abre o modal
     }
 
     span.onclick = function() {
-        modal.classList.remove('show'); // Remove a classe show para esconder o modal e o conteúdo
         modal.style.display = "none"; // Fecha o modal
     }
 
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.classList.remove('show'); // Remove a classe show para esconder o modal e o conteúdo
             modal.style.display = "none"; // Fecha o modal ao clicar fora dele
         }
     }
