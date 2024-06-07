@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Feliz Dia Dos Namorados</title>
-
 </head>
 <body>
 
@@ -17,11 +16,18 @@
         <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="">
 
         <h2>Aceita namorar comigo? </h2>
-        
 
-        <a href="https://www.youtube.com/watch?v=oRvND-r57Us"><button id="sim" > Sim! </button></a>
+        <button id="sim"> Sim! </button>
         <button onmouseover="fuja()" id="nao"> Não! </button>
-        
     </div>   
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="imagens/Certificado de Namoro.png" alt="Certificado de Namoro">
+        </div>
+    </div>
+
 </body>
 </html>
