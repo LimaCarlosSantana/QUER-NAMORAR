@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btnSim.onclick = function() {
         var modalContent = document.querySelector(".modal-content");
         var img = document.createElement("img");
-        img.src = "imagens/Certificado de Namoro.png";
+        img.src = "imagens/Certificado de Namoro.gif";
         img.alt = "Certificado de Namoro";
         // Remove a imagem anterior se houver
         if (modalContent.querySelector("img")) {
